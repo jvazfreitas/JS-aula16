@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordic Mythology Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nordic Mythology Jewelry</h1>
+        <nav>
+            <ul>
+                <li><a href="#rings">Rings</a></li>
+                <li><a href="#necklaces">Necklaces</a></li>
+                <li><a href="#bracelets">Bracelets</a></li>
+                <li><a href="#earrings">Earrings</a></li>
+                <li><a href="#keychains">Keychains</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Discover the Enchantment of Nordic Mythology</h2>
+        <p>Exquisite designs inspired by timeless legends.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Collection</h2>
+        <div class="product-grid">
+            <div class="product-item" id="rings">
+                <img src="https://i.etsystatic.com/53761084/r/il/8db3bd/6269953291/il_794xN.6269953291_sve1.jpg" alt="Nordic Ring">
+                <h3>Nordic Ring</h3>
+                <p>Price: $120</p>
+                <button onclick="addToCart('Nordic Ring', 120)">Add to Cart</button>
+            </div>
+            <div class="product-item" id="necklaces">
+                <img src="https://i.etsystatic.com/52676657/r/il/ab14e2/6043727144/il_794xN.6043727144_3icf.jpg" alt="Nordic Necklace">
+                <h3>Nordic Necklace</h3>
+                <p>Price: $150</p>
+                <button onclick="addToCart('Nordic Necklace', 150)">Add to Cart</button>
+            </div>
+            <div class="product-item" id="bracelets">
+                <img src="https://www.vikingwarriorshirts.com/cdn/shop/files/knotwork-wolves-or-ragnarok-geri-and-freki-torc-bracelet-in-twisted-gold-and-steel-1_1200x.jpg?v=1705550692" alt="Nordic Bracelet">
+                <h3>Nordic Bracelet</h3>
+                <p>Price: $100</p>
+                <button onclick="addToCart('Nordic Bracelet', 100)">Add to Cart</button>
+            </div>
+            <div class="product-item" id="earrings">
+                <img src="https://i.etsystatic.com/8282368/r/il/1c7b9a/4072023639/il_794xN.4072023639_lzjx.jpg" alt="Nordic Earrings">
+                <h3>Nordic Earrings</h3>
+                <p>Price: $80</p>
+                <button onclick="addToCart('Nordic Earrings', 80)">Add to Cart</button>
+            </div>
+            <div class="product-item" id="keychains">
+                <img src="https://tripleviking.com/cdn/shop/files/Sfeb9b69c917d4afe90a0b26514507562B.webp?v=1703204473" alt="Nordic Keychain">
+                <h3>Nordic Keychain</h3>
+                <p>Price: $50</p>
+                <button onclick="addToCart('Nordic Keychain', 50)">Add to Cart</button>
+            </div>
+            <div class="product-item" id="brooches">
+                <img src="https://valhalla-vikings.co.uk/cdn/shop/files/Nordic-Viking-Vegvisir-Scandinavian-Compass-runes-runic-Pin-Elder-Futhark-Badge-Wicca-Norse-Brooch-Ancient-Mythology.jpg_Q90.jpg__1_2000x.jpg?v=1683675124" alt="Nordic Brooch">
+                <h3>Nordic Brooch</h3>
+                <p>Price: $70</p>
+                <button onclick="addToCart('Nordic Brooch', 70)">Add to Cart</button>
+            </div>
+            <div class="product-item" id="pendants">
+                <img src="https://grimfrost.com/cdn/shop/products/2555_j_720x.jpg?v=1579589158" alt="Nordic Pendant">
+                <h3>Nordic Pendant</h3>
+                <p>Price: $90</p>
+                <button onclick="addToCart('Nordic Pendant', 90)">Add to Cart</button>
+            </div>
+            <div class="product-item" id="anklets">
+                <img src="https://i.etsystatic.com/9966073/r/il/9e5802/3770400648/il_794xN.3770400648_rrjd.jpg" alt="Nordic Anklet">
+                <h3>Nordic Anklet</h3>
+                <p>Price: $60</p>
+                <button onclick="addToCart('Nordic Anklet', 60)">Add to Cart</button>
+            </div>
+            <div class="product-item" id="chokers">
+                <img src="https://i.etsystatic.com/13892643/r/il/714f03/5269605908/il_794xN.5269605908_2di0.jpg" alt="Nordic Choker">
+                <h3>Nordic Choker</h3>
+                <p>Price: $110</p>
+                <button onclick="addToCart('Nordic Choker', 110)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Subscribe to our newsletter for exclusive offers!</p>
+        <form action="#">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
+
+    <!-- Modal for the shopping cart -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <p>Total: $<span id="totalPrice">0</span></p>
+            <button onclick="clearCart()">Clear Cart</button>
+            <button onclick="closeCart()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
