@@ -16,6 +16,7 @@
                 <li><a href="#bracelets">Bracelets</a></li>
                 <li><a href="#earrings">Earrings</a></li>
                 <li><a href="#keychains">Keychains</a></li>
+                <li><button onclick="openCart()">Cart</button></li>
             </ul>
         </nav>
     </header>
@@ -85,14 +86,6 @@
         </div>
     </section>
 
-    <footer>
-        <p>Subscribe to our newsletter for exclusive offers!</p>
-        <form action="#">
-            <input type="email" placeholder="Enter your email">
-            <button type="submit">Subscribe</button>
-        </form>
-    </footer>
-
     <!-- Modal for the shopping cart -->
     <div id="cartModal" class="modal">
         <div class="modal-content">
@@ -104,6 +97,15 @@
             <button onclick="closeCart()">Close</button>
         </div>
     </div>
+
+    <footer>
+        <p>Subscribe to our newsletter for exclusive offers!</p>
+        <form action="#">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p>© 2024 Nordic Mythology Jewelry. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
